@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenny Le - Video Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #181818;
+            color: #d4d4d4;
+            font-family: 'Lexend', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            opacity: 0;
+            transform: translateY(30px); 
+            transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+        }
+        
+        .container {
+            max-width: 800px;
+            padding: 20px;
+        }
+        header {
+            text-align: left;
+        }
+        h1 {
+            font-size: 2em;
+            font-style: normal;
+        }
+        p {
+            font-size: 1em;
+            color: #aaaaaa;
+        }
+        .dm-mono-regular {
+            font-family: "DM Mono", monospace;
+            font-weight: 400;
+            font-style: normal;
+        }   
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            font-size: 1em;
+            margin-top: 10px;
+        }
+        .experience {
+            margin-top: 30px;
+        }
+        h2 {
+            font-size: 1.5em;
+        }
+        .job {
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .date {
+            background: #555;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        .nametext {
+            font-size: 30px; 
+            font-family: "Lexend", serif;
+            font-style: bold;
+        }
+        .projects {
+            font-size: 20px;
+        }
+        a {
+            color:gray;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.body.style.opacity = "1";
+            document.body.style.transform = "translateY(0)";
+            document.body.style.position = "static";
+        });
+    </script>
+    <div class="container">
+        <header>
+            <span class=nametext><h1>Video Projects</h1></span>
+            <p><span class="dm-mono-regular">Undergraduate @ Rutgers University<br>
+               Majoring in ITI<br>
+               Minor in Data Sci</p></span>
+        </header>
+        <section class="experience">
+            <h2>Projects</h2>
+            <div class="job">
+                <h3>Student Organization Work</h3>
+                <span class="dm-mono-regular">
+                <iframe width="853" height="480" src="https://drive.google.com/file/d/1Eahr3ZrwiljjUOEfCiQAwn5Ex0lh0kef/view?usp=sharing" title="Letters From Tomorrow Part 1(STT 2024)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </span>
+            </div>
+        </section>
+        <section class="experience">
+            <h2>Contact</h2>
+            <div class="job">       
+                <ul>
+                    <h3><span class="dm-mono-regular" font-style="normal"><a href="https://github.com/hikennii">Github</a></span></h3>
+                    <h3><span class="dm-mono-regular" font-style="normal"><a href="https://www.linkedin.com/in/kenny-le-3b81bb320/">LinkedIn</span></a></h3>
+                    <h3><span class="dm-mono-regular" font-style="normal">Email - </span>kennyto08618@gmail.com</h3>
+                </ul>
+                </span>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
