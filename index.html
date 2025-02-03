@@ -18,7 +18,11 @@
             padding: 0;
             display: flex;
             justify-content: center;
+            opacity: 0;
+            transform: translateY(30px); 
+            transition: opacity 0.7s ease-out, transform 0.7s ease-out;
         }
+        
         .container {
             max-width: 800px;
             padding: 20px;
@@ -85,6 +89,13 @@
     </style>
 </head>
 <body>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.body.style.opacity = "1";
+            document.body.style.transform = "translateY(0)";
+            document.body.style.position = "static";
+        });
+    </script>
     <div class="container">
         <header>
             <span class=nametext><h1><em>Kenny Le</em></h1></span>
@@ -97,6 +108,7 @@
                     <span class="dm-mono-regular">
                     <span class="projects">
                     <li><span class="material-symbols-outlined" style="vertical-align: -5px;">folder</span>&nbsp;Video Projects</li>
+                    <li><span class="material-symbols-outlined" style="vertical-align: -5px;">folder</span>&nbsp;Photo Projects</li>
                     <li><span class="material-symbols-outlined" style="vertical-align: -5px;">folder</span>&nbsp;Graphic Design Projects</li>
                     </span>
                     </span>
@@ -127,6 +139,29 @@
                     <li>Graphic designed Instagram posts for events, being punctual with deadlines.</li><br>
                     <li>Color graded photos for clients, ensuring quality and alignment with creative vision.</li><br>
                     <li>Mentored under a media producer of the company, learning more of the creative process.</li>
+                </ul>
+                </span>
+            </div>
+            <div class="job">
+                <h3>Asian American Cultural Center <br><br>[Student Assistant]</h3>
+                <span class="dm-mono-regular">
+                <span class="date">Jan 2024 - Present</span>
+                <ul>
+                    <li>Collaborated with over 20+ staff and volunteers to create smooth, successful event experiences.</li><br>
+                    <li>Contributed to the preparation and planning of cultural programs and community events.</li><br>
+                    <li>Distributed food and supplies to event attendees, ensuring they had a smooth and enjoyable experience.</li>
+                </ul>
+                </span>
+            </div>
+            <div class="job">
+                <h3>Dr. Aunties Gourmet Popcorn<br><br>[Packaging & Cook]</h3>
+                <span class="dm-mono-regular">
+                <span class="date">Jan 2024 - Present</span>
+                <ul>
+                    <li>Cleaned and sanitized the workspace, maintaining a clean environment for customers and workers.</li><br>
+                    <li>Packaged and cooked various flavors of popcorn during peak hours.</li><br>
+                    <li>Helped set up the place before grand opening, setting up the Toast POS system.</li><br>
+                    <li>Provided technical support for the digital menu and various tech related issues.</li>                    </li>
                 </ul>
                 </span>
             </div>
