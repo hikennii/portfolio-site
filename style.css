@@ -44,6 +44,7 @@ nav ul li {
 }
 h2 {
     font-size: 1.5em;
+    
 }
 .job {
     padding: 15px;
@@ -56,9 +57,15 @@ h2 {
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 0.9em;
+    animation: fade linear;
+    animation-timeline: view();
+    animation-range: entry 5% cover 45%;
 }
 ul {
     padding-left: 20px;
+    animation: fade linear;
+    animation-timeline: view();
+    animation-range: entry 5% cover 30%;
 }
 li {
     margin-bottom: 5px;
@@ -73,4 +80,19 @@ li {
 }
 a {
     color:gray;
+}
+
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h3 {
+    animation: fade linear;
+    animation-timeline: view();
+    animation-range: entry 5% cover 45%;
 }
