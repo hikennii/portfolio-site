@@ -99,7 +99,7 @@ h3 {
 
 .typing-text {
     color: #aaaaaa;
-    border-right: 0.15em solid #aaaaaa; /* Cursor */
+    border-right: 0.15em solid #aaaaaa;
     white-space: nowrap;
     overflow: hidden;
     display: inline-block;
