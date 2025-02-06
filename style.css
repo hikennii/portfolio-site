@@ -99,6 +99,9 @@ h3 {
 
 .typing-text {
     color: #aaaaaa;
+    font-family: "DM Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
     border-right: 0.15em solid #aaaaaa;
     white-space: nowrap;
     overflow: hidden;
