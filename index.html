@@ -19,9 +19,47 @@
             document.body.style.position = "static";
         });
     </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          const texts = ["Video Editor", "Graphic Designer", "Photographer", "College Student"];
+          const typingTextElement = document.getElementById("typing-text");
+  
+          let textIndex = 0;
+          let charIndex = 0;
+          let isDeleting = false;
+          const typingSpeed = 100;
+          const deletingSpeed = 50;
+          const pauseDuration = 2000;
+  
+          function type() {
+            const currentText = texts[textIndex];
+            const currentLength = typingTextElement.textContent.length;
+  
+            if (!isDeleting && currentLength < currentText.length) {
+              typingTextElement.textContent += currentText.charAt(charIndex);
+              charIndex++;
+              setTimeout(type, typingSpeed);
+            } else if (isDeleting && currentLength > 0) {
+              typingTextElement.textContent = currentText.substring(0, currentLength - 1);
+              setTimeout(type, deletingSpeed);
+            } else if (!isDeleting && currentLength === currentText.length) {
+              isDeleting = true;
+              setTimeout(type, pauseDuration);
+            } else if (isDeleting && currentLength === 0) {
+              isDeleting = false;
+              textIndex = (textIndex + 1) % texts.length;
+              charIndex = 0;
+              setTimeout(type, typingSpeed);
+            }
+          }
+  
+          type();
+        });
+    </script>
     <div class="container">
         <header>
-            <span class=nametext><h1>Kenny Le</h1></span>
+            <span class=nametext><h1 style="line-height: 0.5;">Kenny Le</h1></span>
+            <span class="dm-mono-regular" style="vertical-align: 5.5px; color: #aaaaaa;">I'm a </span><span class="typing-text" id="typing-text"></span>
             <p><span class="dm-mono-regular">Undergraduate @ Rutgers University<br>
                Majoring in ITI<br>
                Minor in Data Sci</p></span>
@@ -30,10 +68,11 @@
                 <ul>
                     <span class="dm-mono-regular">
                     <span class="projects">
-                    <li><span class="material-symbols-outlined" style="vertical-align: -5px;">folder</span>&nbsp;<a href="video.html">Video Projects</a></li>
+                    <li><span class="material-symbols-outlined" style="vertical-align: -6px;">download</span>&nbsp;<a href="Kenny Le - Resume.pdf" download>Download CV</a></li>
+                    <li><span class="material-symbols-outlined" style="vertical-align: -5px;"><span class="material-symbols-outlined">photo_camera</span></span>&nbsp;<a href="video.html">Video Projects</a></li>
                     <!--<li><span class="material-symbols-outlined" style="vertical-align: -5px;">folder</span>&nbsp;<a href="photo.html">Photo Projects</a></li>-->
-                    <li><span class="material-symbols-outlined" style="vertical-align: -5px;">folder</span>&nbsp;<a href="graphic.html">Graphic Design Projects</a></li>
-                    <li><span class="material-symbols-outlined" style="vertical-align: -5px;">folder</span>&nbsp;<a href="coding.html">Coding Projects</a></li>
+                    <li><span class="material-symbols-outlined" style="vertical-align: -5px;">palette</span>&nbsp;<a href="graphic.html">Graphic Design Projects</a></li>
+                    <li><span class="material-symbols-outlined" style="vertical-align: -5px;">computer</span>&nbsp;<a href="coding.html">Coding Projects</a></li>
                     <li><span class="material-symbols-outlined" style="vertical-align: -5px;">folder</span>&nbsp;<a href="cert.html">Certifications</a></li>
                     </span>
                     </span>
@@ -44,7 +83,7 @@
             <h2>Experiences</h2>
             <div class="job">
                 <h3>Rutgers Vietnamese Student Association <br><br>[Visual Media Coordinator/Historian]</h3><span class="dm-mono-regular">
-                <span class="date">Nov 2023 - Present</span>
+                <span class="date">May 2024 - Present</span>
                 <ul>
                     <li>Produced and directed a film for a charity event, engaging over 300 attendees.</li><br>
                     <li>Generated photos and video to promote for the club’s social media account, with a following of 2,000+ followers.</li><br>

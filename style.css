@@ -96,3 +96,15 @@ h3 {
     animation-timeline: view();
     animation-range: entry 5% cover 45%;
 }
+
+.typing-text {
+    color: #aaaaaa;
+    font-family: "DM Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    border-right: 0.15em solid #aaaaaa;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: typing 2s steps(20, end), blink-caret 0.75s step-end infinite;
+  }
