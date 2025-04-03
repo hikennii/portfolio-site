@@ -12,8 +12,8 @@ body {
 }
 
 .container {
-  width: 100%; /* Full width */
-  max-width: 800px; /* Set a maximum width for larger screens */
+  width: 100%; 
+  max-width: 800px; 
   margin: 0 auto;
   padding: 20px;
 }
