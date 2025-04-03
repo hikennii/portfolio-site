@@ -12,8 +12,10 @@ body {
 }
 
 .container {
-    max-width: 800px;
-    padding: 20px;
+  width: 100%; /* Full width */
+  max-width: 800px; /* Set a maximum width for larger screens */
+  margin: 0 auto;
+  padding: 20px;
 }
 header {
     text-align: left;
