@@ -12,8 +12,10 @@ body {
 }
 
 .container {
-    max-width: 800px;
-    padding: 20px;
+  width: 100%; 
+  max-width: 800px; 
+  margin: 0 auto;
+  padding: 20px;
 }
 header {
     text-align: left;
@@ -78,9 +80,6 @@ li {
 .projects {
     font-size: 20px;
 }
-a {
-    color:gray;
-}
 
 @keyframes fade{
     from{
@@ -108,3 +107,24 @@ h3 {
     display: inline-block;
     animation: typing 2s steps(20, end), blink-caret 0.75s step-end infinite;
   }
+
+a {
+    color: #aaaaaa;
+    text-decoration: none;
+}
+
+#links li {
+    transition: 0.2s ease;
+}
+
+#links li:hover {
+    transform: scale(1.02);
+}
+
+#back_arrow {
+    transition: 0.2s ease;
+}
+
+#back_arrow:hover {
+    transform: scale(1.25);
+}
