@@ -1,19 +1,20 @@
 body {
-    background-color: #181818;
-    color: #d4d4d4;
+    background-image: linear-gradient(to right top, #222222, #181818, #363636);
+    background-size: cover;
+    color: #ffffff;
     font-family: 'Lexend', sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     opacity: 0;
-    transform: translateY(30px); 
-    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+    display: flex;
+    justify-content: center;
 }
 
 .container {
   width: 100%; 
-  max-width: 800px; 
+  max-width: 1000px; 
   margin: 0 auto;
   padding: 20px;
 }
@@ -26,7 +27,7 @@ h1 {
 }
 p {
     font-size: 1em;
-    color: #aaaaaa;
+    color: #ffffff;
 }
 .dm-mono-regular {
     font-family: "DM Mono", monospace;
@@ -46,7 +47,7 @@ nav ul li {
 }
 h2 {
     font-size: 1.5em;
-    
+
 }
 .job {
     padding: 15px;
@@ -54,11 +55,13 @@ h2 {
     margin-top: 10px;
 }
 .date {
-    background: #555;
-    color: white;
+    background: #ffffff1c;
+    color: rgb(255, 255, 255);
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 0.9em;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.3),
+                0 0 20px rgba(255, 255, 255, 0.2);
     animation: fade linear;
     animation-timeline: view();
     animation-range: entry 5% cover 45%;
@@ -76,6 +79,7 @@ li {
     font-size: 30px; 
     font-family: "Lexend", serif;
     font-style: bold;
+    color: white;
 }
 .projects {
     font-size: 20px;
@@ -97,11 +101,11 @@ h3 {
 }
 
 .typing-text {
-    color: #aaaaaa;
+    color: #ffffff;
     font-family: "DM Mono", monospace;
     font-weight: 400;
     font-style: normal;
-    border-right: 0.15em solid #aaaaaa;
+    border-right: 0.15em solid #ffffff;
     white-space: nowrap;
     overflow: hidden;
     display: inline-block;
@@ -109,7 +113,7 @@ h3 {
   }
 
 a {
-    color: #aaaaaa;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -127,4 +131,56 @@ a {
 
 #back_arrow:hover {
     transform: scale(1.25);
+}
+
+.glass-container {
+    height: 520px;
+    width: 370px;
+    padding: 30px 50px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.20);
+}
+
+.glass-container2 {
+    height:1680px;
+    width:900px; 
+    padding: 40px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    margin-top: 80px;
+    
+}
+
+.glass-container3 {
+    height:350px;
+    width:250px; 
+    padding: 40px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    margin-top: 80px;
+}
+
+.fade-in {
+    animation: fade 1s ease-out forwards;
+}
+
+.glowtext {
+    color: white;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.3),
+                0 0 20px rgba(255, 255, 255, 0.2);
+    animation: fade linear;
+    animation-timeline: view();
+    animation-range: entry 5% cover 45%;
 }
