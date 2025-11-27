@@ -10,6 +10,7 @@ body {
     opacity: 0;
     display: flex;
     justify-content: center;
+    padding-bottom: 210px;
 }
 
 .container {
@@ -184,3 +185,5 @@ a {
     animation-timeline: view();
     animation-range: entry 5% cover 45%;
 }
+
+
